@@ -2,11 +2,20 @@
   "name": "nuz-banner",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/nuz-button.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:production": "vue-cli-service build --target wc --name nuz-button src/App.vue",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/*",
+    "public/*",
+    "src/*",
+    "*.js",
+    "*.json"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
